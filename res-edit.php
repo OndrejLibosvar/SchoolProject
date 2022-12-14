@@ -13,13 +13,13 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     }
     $input_datum = trim($_POST["datum"]);
     if(empty($input_datum)){
-        $datum_err = "Zadejte číslo pokoje";
+        $datum_err = "Zadejte datum";
     } else{
         $datum = $input_datum;
     }
     $input_email = trim($_POST["email"]);
     if(empty($input_email)){
-        $email_err = "Zadejte číslo pokoje";
+        $email_err = "Zadejte email";
     } else{
         $email = $input_email;
     }
@@ -56,7 +56,7 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
 
             if(mysqli_stmt_execute($stmt)){
                 $result = mysqli_stmt_get_result($stmt);
-                if(mysqli_num_rows($result) == 0){
+                if(mysqli_num_rows($result) == 1){
                     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                     $pokoj = $row["pokoj"];
                     $datum = $row["datum"];
@@ -83,11 +83,10 @@ if(isset($_POST["id"]) && !empty($_POST["id"])){
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Závěrečný projekt 2</title>
+        <title>Editace</title>
         <link rel="stylesheet" href="main.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-        <link href="data:image/x-icon;base64,AAABAAEAEBACAAAAAACwAAAAFgAAACgAAAAQAAAAIAAAAAEAAQAAAAAAQAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAKoAAAGAAAAH4AAAH/AAABmYAAAZmAAAAZgAAAGYAAAH8AAAD+AAABmAAAAZgAAAGZgAABmYAAAP+AAAB+AAAAGAAAD+fwAA+B8AAOAPAADmZwAA5mcAAP5nAAD+ZwAA+A8AAPAfAADmfwAA5n8AAOZnAADmZwAA8AcAAPgfAAD+fwAA" rel="icon" type="image/x-icon" />
     </head>
     <body>
             <div class="page">
