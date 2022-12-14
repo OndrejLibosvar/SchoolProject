@@ -1,0 +1,231 @@
+body{
+    background-image: url(assets/zanzibar.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: 'Roboto', sans-serif;
+}
+.toptext {
+    position:relative;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    text-shadow: 0 0 3px #000, 0 0 5px #0000FF;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-around;
+    top:4rem;
+}
+.btn-one {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: aliceblue;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-one:hover {
+    background-color: azure;
+    transition: 0.3s;
+    color: black;
+}
+.page {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.login {
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.btn-two {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2rem;
+}
+.btn-two:hover {
+    background-color: black;
+    transition: 0.3s;
+    color: white;
+}
+.title {
+    margin-top: 5rem;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    text-shadow: 0 0 3px #000, 0 0 5px #0000FF;
+    font-size: 3rem;
+    justify-content: space-around;
+    
+}
+.btn-3{
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2rem;
+}
+.btn-3:hover{
+    background-color: transparent;
+    transition: 0.3s;
+    color: black;
+}
+.label {
+    font-family: 'Roboto', sans-serif;
+    color:white;
+    text-shadow: 0 0 3px #000, 0 0 5px #0000FF;
+}
+.crt-res{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+.crt-res .btn-3{
+    position: relative;
+}
+.crt-res .btn-one{
+    position: relative;
+    top:0;
+    left:0;
+    transform: none;
+    margin-top: 2rem;
+}
+
+.tab {
+    display: flex;
+    justify-content: space-around;
+    border-spacing: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-top: 8rem;
+    
+}
+
+.row {
+    background-color: #009879;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    
+}
+.item{
+    padding: 1rem;
+    background-color:#8ef5e0;
+}
+.item-del{
+    padding: 1rem;
+    background-color:#8ef5e0;
+    text-decoration: none;
+    color:black;
+}
+.item-del2{
+    text-decoration: none;
+    color: black;
+}
+.item-del:hover{
+    background-color:#009879;
+    transition: 0.3s;
+}
+.head{
+    padding:1rem;
+}
+.btn-4 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2rem;
+}
+.btn-4:hover {
+    background-color: black;
+    transition: 0.3s;
+    color: white;
+}
+.parag {
+    font-size: 2rem;
+    text-align: center;
+}
+.btns-res{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.del{
+    margin-top: 3rem;
+}
+.btn-yes {
+    position: relative;
+    background-color: transparent;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2rem;
+}
+.btn-yes:hover{
+    background-color: black;
+    transition: 0.3s;
+    color: white;
+}
+.btn-no{
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.btn-no:hover {
+    background-color: white;
+    transition: 0.3s;
+    color: black;
+}
